@@ -1,0 +1,6 @@
+<h2>Tell me my hero, where you're going</h2>
+<ul>
+  <li *ngFor="let meme of memes" (click)="onSelect(meme)">
+      <span class="badge">{{meme.id}}: </span> {{meme.name}}
+  </li>
+</ul>
